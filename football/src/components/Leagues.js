@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
+import "../App.css";
 
-class Leagues extends Component {
-    render() {
-        return (
-            <div className="leagues-container">THIS IS LEAGUES</div>
-        );
-    }
+const Leagues = () => {
+
+    return (
+        <div className="leagues-container">THIS LEAGUES</div>
+    );
 }
 
 export default Leagues;

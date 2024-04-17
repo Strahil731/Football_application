@@ -1,8 +1,8 @@
 import React from "react";
 
-function Standings() {
+const Standings = () => {
     return (
-        <div className="standings-container">THIS IS STANDINGS</div>
+        <div className="standings-container">THIS STANDINGS</div>
     );
 }
 
