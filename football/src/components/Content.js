@@ -3,24 +3,23 @@ import "../App.css";
 import Leagues from "./Leagues";
 import Standings from "./Standings";
 
-function Content() {
+
+const Content = () => {
     const [active, setActive] = useState(true);
+
     return (
         <div className="content-container">
-            <div className="nav">
+            <div className="tabs">
                 <div className="tab-leagues" onClick={() => setActive(true)}>
-                    <h2>Leagues</h2>
+                    <h2 style={{ color: active ? "#FF0000" : null }}>Leagues</h2>
                 </div>
-                <hr />
                 <div className="tab-standings" onClick={() => setActive(false)}>
-                    <h2>Standings</h2>
+                    <h2 style={{ color: !active ? "#FF0000" : null }}>Standings</h2>
                 </div>
             </div>
-
             {active ? <Leagues /> : <Standings />}
         </div>
     );
 }
-
 
 export default Content;
